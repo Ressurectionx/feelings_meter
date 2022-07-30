@@ -57,13 +57,13 @@ weekDays(number) {
   return Day;
 }
 
-Week Mo=Week(weekDays(firstDayOfWeekIndex),currentDateInt+1);
-Week Tu=Week("Tu", currentDateInt+2);
-Week We=Week("We", currentDateInt+3);
-Week Th=Week("Th", currentDateInt+4);
-Week Fr=Week("Fr", currentDateInt+5);
-Week Sa=Week("Sa", currentDateInt+6);
-Week Su=Week("Su", currentDateInt+7);
+Week Mo=Week(weekDays(firstDayOfWeekIndex),currentDateInt);
+Week Tu=Week("Tu", currentDateInt+1);
+Week We=Week("We", currentDateInt+2);
+Week Th=Week("Th", currentDateInt+3);
+Week Fr=Week("Fr", currentDateInt+4);
+Week Sa=Week("Sa", currentDateInt+5);
+Week Su=Week("Su", currentDateInt+6);
 
 
 

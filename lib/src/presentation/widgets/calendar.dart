@@ -33,7 +33,7 @@ class Calendar extends StatelessWidget {
               scrollDirection: Axis.horizontal,
               itemCount: week.length,
               itemBuilder: (context,index){
-                bool today=week[index].date==currentDateInt+1;
+                bool today=week[index].date==currentDateInt;
                 return Container(
                     margin: const EdgeInsets.only(right: 12),
                     width: 38,
