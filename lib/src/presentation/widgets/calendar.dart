@@ -25,33 +25,33 @@ class Calendar extends StatelessWidget {
           child:  Text(today),
         ),
         topPadding(15),
-         SizedBox(
-           height: getProportionateScreenHeight(80),
-           child: ListView.builder(
+        SizedBox(
+          height: 80,
+          child: ListView.builder(
               shrinkWrap: true,
               physics: const NeverScrollableScrollPhysics(),
               scrollDirection: Axis.horizontal,
-                itemCount: week.length,
-                itemBuilder: (context,index){
-                bool today=week[index].date==currentDateInt;
-              return Container(
-                  margin: const EdgeInsets.only(right: 12),
-                  width: getProportionateScreenWidth(38),
-                  height: getProportionateScreenHeight(80),
-                  decoration:  BoxDecoration(
-                  color: today ? black.withOpacity(0.6) : transparent,
-                  borderRadius: BorderRadius.circular(10),
-               //   boxShadow: [BoxShadow(color: greyLight,offset: const Offset(2,0),blurRadius: 10),]
-                  ),
-                child: Column(children: [
-                  topPadding(10),
-                  Text(week[index].day,style: styleLight(today?white:grey, 14),),
-                  topPadding(10),
-                  Text(week[index].date.toString(),style: styleLight(today?white:grey, 14),),
-                ],
-              ));
-            }),
-         ),
+              itemCount: week.length,
+              itemBuilder: (context,index){
+                bool today=week[index].date==currentDateInt+1;
+                return Container(
+                    margin: const EdgeInsets.only(right: 12),
+                    width: 38,
+                    height: 80,
+                    decoration:  BoxDecoration(
+                      color: today ? black.withOpacity(0.6) : transparent,
+                      borderRadius: BorderRadius.circular(10),
+                      //   boxShadow: [BoxShadow(color: greyLight,offset: const Offset(2,0),blurRadius: 10),]
+                    ),
+                    child: Column(children: [
+                      topPadding(10),
+                      Text(week[index].day,style: styleLight(today?white:greyLight, 14),),
+                      topPadding(10),
+                      Text(week[index].date.toString(),style: styleLight(today?white:grey, 14),),
+                    ],
+                    ));
+              }),
+        ),
 
       ],
     );

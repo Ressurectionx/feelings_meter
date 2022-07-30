@@ -35,16 +35,24 @@ class _FeelingsHistoryScreenState extends State<FeelingsHistoryScreen> {
           topPadding(20),   //SizedBox of 20 for gap
           Text("Your feelings from last 30 days",style: styleLight(black75, 16)),
           topPadding(10),
+          //vertical chips where feeling percentage and feeling image is showing
           const FeelingsChip(),
            divider,    //divider
+            //SizedBox of 10
             topPadding(10),
+           //Today's date and next 7 days calendar
            const Calendar(),
+            //SizedBox of 16
             topPadding(16),
             divider,    //divider
+            //SizedBox of 16
             topPadding(16),
+            //showing daily time where feelings change
             const FeelingOnTime(),
             divider,
+            //SizedBox of 20
             topPadding(20),
+            //dymmy paragraph and images
             const Dummy(),
             // widget
         ],),

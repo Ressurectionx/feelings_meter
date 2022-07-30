@@ -51,8 +51,6 @@ class FeelingsChip extends StatelessWidget {
                                   child: Image.asset(feelingMap[index].path.toString(),height: 28,)),
                                 ))
                           ],),
-
-
                       ),
                       topPadding(5),
                       Text(feelingMap[index].feeling.toString(),style: styleLight(zero ?grey:black, 13),)
