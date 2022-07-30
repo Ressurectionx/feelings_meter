@@ -2,15 +2,8 @@
 
 A new Flutter project.
 
-## Getting Started
 
-This project is a starting point for a Flutter application.
 
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+A Flutter-built Android app called Feeling Meter displays 
+your emotional history as well as how your behaviour and mood evolve over time.
+![Screenshot_1659169122](https://user-images.githubusercontent.com/56448015/181895329-d8fd2fdd-a278-4aff-8023-0a86a50cef32.png)
